@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 #include "fen/fen.h"
-
+#include "legalmoves/legalmoves.h"
 
 int main() {
-	Board* bb = FenToBitboard("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
+	Board* bb = FenToBitboard("RNBQKBNR/PPPPPPPP/8/8/8/8/pppppppp/rnbqkbnr", 1);
 
-	printf("%llu", bb->pawns);
-
-	//printf("the amount of white rooks on the board is %i", (*pos).whiteRooks);
+	printf("black queens are %llu", bb->black_queens);
 
 	return 0;
 }

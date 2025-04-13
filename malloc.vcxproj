@@ -128,12 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="engine.c" />
+    <ClCompile Include="bit\bit.c" />
     <ClCompile Include="fen\fen.c" />
     <ClCompile Include="legalmoves\legalmoves.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bit\bit.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="fen\fen.h" />
     <ClInclude Include="legalmoves\legalmoves.h" />
